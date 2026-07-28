@@ -31,4 +31,8 @@ flowchart TD
 
 - Choose **one** branch per turn.  
 - After one deep follow-up on a cell, prefer shifting aspect next turn.  
-- No premise invention when grounding.
+- No premise invention when grounding.  
+- Ideal / hypothetical answers (“I would…”) are still **Abstract_only**: ground in a real episode; do not deepen the plan as if it were past behavior.  
+- If no episode can be elicited, stop unlimited digging and defer to product **dialogue-termination** (out of scope for this map).
+
+Field note: [failure-case-behavioral-evidence.md](../docs/failure-case-behavioral-evidence.md).
