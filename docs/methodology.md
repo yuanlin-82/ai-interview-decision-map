@@ -81,6 +81,11 @@ Example (observed class of failures):
 - Contract fix: re-anchor uses **last interviewer question in dialogue** (stem only if it was last).  
 - Implementation may use a model-filled slot; the *decision* is what we publish, not the slot syntax.
 
+Longer field notes (dialogue-design lens):
+
+- [failure-case-reanchor.md](./failure-case-reanchor.md) — stem vs last-ask re-anchor  
+- [failure-case-behavioral-evidence.md](./failure-case-behavioral-evidence.md) — “I would” chat vs past-episode grounding
+
 ## What we deliberately do not publish
 
 - Prompt text, few-shot banks, fixed utterance lists.  

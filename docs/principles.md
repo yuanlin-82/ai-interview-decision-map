@@ -24,14 +24,15 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 
 10. **Probe from an anchor** in the candidate’s meaning; if there is no anchor, you are still on the abnormal lane.  
 11. **Strategy packs are typed.** `behavioral` ≠ `job-transition` ≠ `fallback`; only the overview router is universal.  
-12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell.
+12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell.  
+13. **For `behavioral`, enforce evidence type.** Ideal / hypothetical “I would…” is not a past episode — ground first; do not accompany the fiction. Digging has a ceiling (termination is a separate product policy).
 
 ## Surface form
 
-13. **Same contract, replaceable surfaces.** Language (ja/en/zh) and model vendor may change copy; action classes should not.  
-14. **Keep public docs free of production utterances.** Publish decisions; withhold scripts.
+14. **Same contract, replaceable surfaces.** Language (ja/en/zh) and model vendor may change copy; action classes should not.  
+15. **Keep public docs free of production utterances.** Publish decisions; withhold scripts.
 
 ## Evaluation mindset
 
-15. **Judge routes, then sentences.** A beautiful sentence on the wrong edge is still a failure.  
-16. **Failure cases update edges.** Prompt polish without contract change is optional; wrong re-anchor targets are not.
+16. **Judge routes, then sentences.** A beautiful sentence on the wrong edge is still a failure.  
+17. **Failure cases update edges.** Prompt polish without contract change is optional; wrong re-anchor targets are not.
