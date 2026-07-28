@@ -27,7 +27,7 @@ This repo turns that contract into something you can:
 | Path | Content |
 |------|---------|
 | [maps/overview.md](./maps/overview.md) | Global decision map (action-level) |
-| [maps/](./maps/) | Sample type-level maps + type index |
+| [maps/](./maps/) | Illustrative type-level maps + index |
 | [docs/question-types.md](./docs/question-types.md) | Question-type matrix (intent only) |
 | [docs/principles.md](./docs/principles.md) | Short design principles |
 | [docs/methodology.md](./docs/methodology.md) | How the map was reverse-derived |
@@ -59,21 +59,17 @@ Key global rule called out on the overview map:
 
 ## Question types at a glance
 
-Follow-up is not one skill. The contract is typed:
+Follow-up is not one skill. The contract is typed.  
+Below is an **illustrative subset** (not an exhaustive product catalog):
 
 | Type key | Assessment intent (short) |
 |----------|---------------------------|
-| `behavior` | Past behavior as evidence of future performance |
-| `situation` | Capability boundaries under scenario tension |
-| `opinion` | Stance quality and reasoning, not “correct answers” |
-| `knowledge` | Concept mastery and applied use |
-| `career` | Decision process behind career choices |
-| `information` | Gather and confirm factual slots |
-| `mentalhealth` | Workplace resilience (non-clinical) |
-| `stability` | Drivers of career transitions (non-judgmental) |
-| `culturefit` | Preferred ways of working via concrete examples |
-| `selfintroduction` | Verify claims, motivation, communication clarity |
-| `default` | Clarify and deepen when no specialized model fits |
+| `behavioral` | Past behavior as evidence of future performance |
+| `situational` | Capability under scenario tension |
+| `career-choice` | Decision process behind career direction |
+| `job-transition` | Drivers of job moves (non-judgmental) |
+| `opening-intro` | Opening narrative: claims, motivation, clarity |
+| `fallback` | Safe continuation when no specialized pack fits |
 
 Details: [docs/question-types.md](./docs/question-types.md).
 

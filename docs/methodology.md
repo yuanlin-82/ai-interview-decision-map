@@ -47,7 +47,7 @@ For each interviewer turn, annotate at least:
 
 | Field | Meaning |
 |-------|---------|
-| `type` | Question-type key (`behavior`, `default`, …) |
+| `type` | Question-type key (`behavioral`, `fallback`, …) |
 | `lane` | `abnormal` \| `normal` |
 | `judgment` | e.g. `Need_Question_Reanchor`, `Empty_Or_Fillers`, … |
 | `action_class` | e.g. `Restate_Last_Interviewer_Question`, `Ask_Single_Open_Question` |

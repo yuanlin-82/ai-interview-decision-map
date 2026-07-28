@@ -1,18 +1,15 @@
 # Type maps index
 
-| Type | Map status |
-|------|------------|
-| overview (all types) | [overview.md](./overview.md) |
-| behavior | [behavior.md](./behavior.md) |
-| situation | same shape as behavior; pack per [question-types](../docs/question-types.md) |
-| opinion | same shape; pack per matrix |
-| knowledge | same shape; pack per matrix |
-| career | same shape; pack per matrix |
-| information | [information.md](./information.md) |
-| mentalhealth | [mentalhealth.md](./mentalhealth.md) |
-| stability | same shape; boundary notes in matrix |
-| culturefit | same shape; boundary notes in matrix |
-| selfintroduction | same shape; pack per matrix |
-| default | [default.md](./default.md) |
+Illustrative subset only (not a full product catalog).
 
-Add mermaid files when a type needs a public diagram beyond the matrix. Prefer extending packs over pasting prompt text.
+| Type | Map |
+|------|-----|
+| overview (shared router) | [overview.md](./overview.md) |
+| `behavioral` | [behavioral.md](./behavioral.md) |
+| `situational` | [situational.md](./situational.md) |
+| `career-choice` | [career-choice.md](./career-choice.md) |
+| `job-transition` | [job-transition.md](./job-transition.md) |
+| `opening-intro` | [opening-intro.md](./opening-intro.md) |
+| `fallback` | [fallback.md](./fallback.md) |
+
+Prefer extending packs over pasting prompt text.

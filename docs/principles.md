@@ -23,7 +23,7 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 ## Normal probing
 
 10. **Probe from an anchor** in the candidate’s meaning; if there is no anchor, you are still on the abnormal lane.  
-11. **Strategy packs are typed.** Behavior ≠ information ≠ culture-fit; only the overview router is universal.  
+11. **Strategy packs are typed.** `behavioral` ≠ `job-transition` ≠ `fallback`; only the overview router is universal.  
 12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell.
 
 ## Surface form
