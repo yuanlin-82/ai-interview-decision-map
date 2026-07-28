@@ -33,6 +33,8 @@ This repo turns that contract into something you can:
 | [docs/question-types.md](./docs/question-types.md) | Question-type matrix (intent only) |
 | [docs/principles.md](./docs/principles.md) | Short design principles |
 | [docs/methodology.md](./docs/methodology.md) | How the map was reverse-derived |
+| [docs/failure-case-reanchor.md](./docs/failure-case-reanchor.md) | Field note: stem vs last-ask re-anchor |
+| [docs/failure-case-behavioral-evidence.md](./docs/failure-case-behavioral-evidence.md) | Field note: “I would” chat vs past-episode evidence |
 | [examples/walkthroughs.md](./examples/walkthroughs.md) | Anonymized path walkthroughs |
 
 ## What you will not find
