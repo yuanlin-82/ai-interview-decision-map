@@ -18,7 +18,7 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 
 7. **Never invent candidate premises** (“when you led the project…”) unless the candidate supplied them.  
 8. **Silent ASR repair** when intent is recoverable; do not quiz the candidate about recognition noise.  
-9. **Type-specific safety/boundary packs** (e.g. non-clinical framing, employer-neutrality) override generic probing when triggered — shown as one overview node, detailed per type.
+9. **Type-specific safety/boundary packs** override generic probing when triggered — shown as one overview node, detailed per type. Example: on `job-transition`, do not dig complaints about a former employer; redirect to fit / future seeking.
 
 ## Normal probing
 

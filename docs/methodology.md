@@ -84,7 +84,8 @@ Example (observed class of failures):
 Longer field notes (dialogue-design lens):
 
 - [failure-case-reanchor.md](./failure-case-reanchor.md) — stem vs last-ask re-anchor  
-- [failure-case-behavioral-evidence.md](./failure-case-behavioral-evidence.md) — “I would” chat vs past-episode grounding
+- [failure-case-behavioral-evidence.md](./failure-case-behavioral-evidence.md) — “I would” chat vs past-episode grounding  
+- [failure-case-job-transition-boundary.md](./failure-case-job-transition-boundary.md) — former-employer complaints vs type safety boundary
 
 ## What we deliberately do not publish
 
