@@ -1,5 +1,7 @@
 # AI Interview Follow-up Decision Map
 
+**For builders of multi-turn / voice interview agents** who need auditable turn routing (exception lanes vs typed probes)—not another prompt dump.
+
 A decision map for AI interview follow-up turns, reverse-derived from real multi-turn dialogues: which route to take after hearing the candidate — not a dump of production prompts.
 
 > **Scope:** methodology & decision contract  
@@ -11,7 +13,7 @@ A decision map for AI interview follow-up turns, reverse-derived from real multi
 ## Why this exists
 
 Follow-up quality is mostly a **routing problem**, not a prose problem.  
-Across languages and model vendors, the stable asset is the *decision contract*: given dialogue state, which action class should fire, under which constraints.
+Across languages and model vendors, the stable asset is the *decision contract*: given dialogue state, which action class should fire, under which constraints—especially when you are also trading off **fat prompts** against layered routing under **sub-second TTS** latency.
 
 This repo turns that contract into something you can:
 
