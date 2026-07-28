@@ -34,5 +34,8 @@ flowchart TD
 ## Pack rules
 
 - Non-judgmental: understand drivers of moves, don’t prosecute past choices.  
-- When negativity toward employers appears, boundary actions outrank curiosity probes.  
-- One probe family per turn.
+- When negativity toward former employers (or managers/colleagues) appears, boundary actions outrank curiosity probes — redirect to environment fit / future seeking; do not dig grievance detail.  
+- One probe family per turn (decision process, values, or patterns).  
+- Prefer *how/what* over accusatory *why* when discussing past moves.
+
+Field note: [failure-case-job-transition-boundary.md](../docs/failure-case-job-transition-boundary.md).
