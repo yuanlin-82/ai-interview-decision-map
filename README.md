@@ -36,6 +36,7 @@ This repo turns that contract into something you can:
 | [docs/failure-case-reanchor.md](./docs/failure-case-reanchor.md) | Field note: stem vs last-ask re-anchor |
 | [docs/failure-case-behavioral-evidence.md](./docs/failure-case-behavioral-evidence.md) | Field note: “I would” chat vs past-episode evidence |
 | [docs/failure-case-job-transition-boundary.md](./docs/failure-case-job-transition-boundary.md) | Field note: former-employer complaints vs safety boundary |
+| [docs/failure-case-situational-overgeneralize.md](./docs/failure-case-situational-overgeneralize.md) | Field note: overgeneralizing one situational follow-up rule |
 | [examples/walkthroughs.md](./examples/walkthroughs.md) | Anonymized path walkthroughs |
 
 ## What you will not find
