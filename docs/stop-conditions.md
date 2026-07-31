@@ -19,9 +19,11 @@ Products typically separate **stopping follow-ups** from **force-closing the ite
 | Kind | Effect | Typical trigger |
 |------|--------|-----------------|
 | **Force-close item** | End the **current item** → next item / next stage | Wall-clock answer time exceeds **item force-close time** |
-| **Stop follow-ups** | **Do not generate** any new follow-up on this item | Checked when the candidate advances (e.g. “next”); see conditions below |
+| **Stop follow-ups** | **No further probes** on this item → advance to the **next item** | Time / round / stop-classifier gates below |
 
-Force-close is a **session timer** decision. Stopping follow-ups is a **probe budget + dialogue policy** decision. They stack; force-close always wins if it fires.
+Between items, products often play a short **transition** line (hand-off copy). That is stage UX, not an extra probe—and not a substitute for the stop decision itself.
+
+**Hardness:** **time is the hardest rule.** When the relevant time ceiling is hit, probing does not continue—even if the stop classifier would say `continue` or a round budget remains.
 
 ### Time anchors (relative to configured max)
 
@@ -43,13 +45,16 @@ A separate **average** answer time may be configured for **recruiter / admin est
 
 ## When to stop follow-ups
 
-**Stop follow-ups** means: **no new follow-up generation**. Evaluate when the candidate tries to advance, if **any** of the following holds:
+**Stop follow-ups** means: no new probe on this item; the dialogue moves on (next item), typically after any configured transition copy.
 
-1. **Time:** answer elapsed time \(>\) follow-up time ceiling (\(T_{\max}-1\) min).  
-2. **Rounds:** dialogue probe count \(>\) **max follow-up rounds** for this type (see table).  
-3. **Stop decision:** at least **one** follow-up has already been asked on this item, **and** the stop classifier outputs `stop`.
+Gates (OR), with **time overriding** policy when clocks fire:
 
-Conditions are **OR**. Time/round caps can stop follow-ups even if the classifier would say `continue`.
+1. **Time:** answer elapsed time \(>\) follow-up time ceiling (\(T_{\max}-1\) min)—**hardest**; ends further probing on this item.  
+2. **Rounds:** **follow-up round** count \(>\) **max follow-up rounds** for this type (see table).  
+   - Count **probe turns only**. The stem ask / first answer cycle is **not** a follow-up round.  
+3. **Stop decision:** at least **one** follow-up has already been asked on this item, **and** the stop classifier outputs `stop` **in time** to intercept (see parallel run below).
+
+If the classifier would say `continue` but time or max rounds already bind, **time/rounds win**.
 
 ### Default vs max rounds (illustrative)
 
@@ -73,15 +78,23 @@ Products often configure both a **default** probe budget and a **maximum** (the 
 
 ## Stop classifier (model branch)
 
-A dedicated classifier decides `stop` vs `continue` for condition 3. It is **not** the live follow-up generator:
+A dedicated classifier decides `stop` vs `continue` for gate 3. It is **not** the live follow-up generator, and it is **not** the offline quality judge.
 
-| Role | Job |
-|------|-----|
-| Follow-up **generator** | Fast, high concurrency; typically **non**-deep-thinking |
-| **Stop classifier** | Binary policy over the transcript; may use a stronger / deep-thinking model |
-| Quality **judge** (offline compare) | Separate again — see [followup-quality.md](./followup-quality.md) |
+| Role | Job | Speed |
+|------|-----|--------|
+| Follow-up **generator** | Produce the next speakable probe | Fast; typically **non**-deep-thinking |
+| **Stop classifier** | Binary brake on the transcript | Must be **fast enough to finish beside generation** |
+| Quality **judge** (offline / shadow compare) | Paired probe scoring | May be slower / deep-thinking — see [followup-quality.md](./followup-quality.md) |
 
-Environments may keep **different** stop-prompt packages (e.g. test/pre-prod vs production). Publish the **decision shape** only; keep wording private.
+### Parallel with generation (intercept)
+
+In live flow, **stop classification often runs in parallel with follow-up generation**. Its job is to **brake**: if it returns `stop` before (or in time to block) committing the generated probe to TTS, that probe is dropped and the item advances.
+
+**Implication:** the stop path should be matched to a **faster** model/config than a leisurely reasoner. If stop latency **exceeds** generation latency, **intercept fails**—the generated probe may already be spoken.
+
+**Failed intercept is often acceptable:** the candidate hears **one** extra follow-up. Product cost is usually mild unless awkward probes **stack** for many turns. Time and max-round caps remain backstops.
+
+Environments may keep different stop-prompt packages (e.g. test/pre-prod vs production). Publish the **decision shape** only; keep wording private.
 
 ### Output contract
 
@@ -123,11 +136,10 @@ ASR caveat (contract-level): unclear speech that could be recognition error shou
 
 ## Out of scope here
 
-- Exact UI after follow-ups are stopped (closing line vs silent advance).  
-- Precise definition of how “rounds” are incremented in telemetry (products must freeze one definition in private runbooks).  
+- Wording of inter-item transition copy.  
 - Production stop-prompt text or vendor model IDs.  
 - Oral proficiency scoring.
 
 ## One-line summary
 
-> **Force-close** ends the item on \(T_{\max}+1\) min; **stop follow-ups** blocks new probes on time (\(T_{\max}-1\)), type **max rounds**, or a binary stop classifier (inappropriate **or** unnecessary)—with maps still owning *what* to ask while probing is allowed.
+> **Time** is the hardest stop; **follow-up rounds** exclude the stem turn; the **stop classifier** runs as a **fast parallel brake** beside generation (missed intercept ≈ one extra probe)—then the item advances, often via transition copy, while maps still own *what* to ask while probing is allowed.

@@ -36,9 +36,10 @@ That is sampling for calibration—not “human scores every line.”
 | Role | Constraint | Typical choice |
 |------|------------|----------------|
 | **Dialogue generator** (live follow-up) | Low latency, high concurrency; must stay under TTS turn budget | Fast path; **not** deep-thinking / long CoT modes |
+| **Stop classifier** (live brake) | Must often finish **in parallel with** generation to intercept | Fast path; see [stop-conditions.md](./stop-conditions.md) |
 | **Quality judge** (offline or shadow compare) | Reasoning over stem + answer + two probes; scale stability matters more than ms | Stronger **deep-thinking** / high-reasoning model |
 
-Do not reuse the live generator’s “non-thinking” config as the judge. Speed and judgment are separate product knobs.
+Do not reuse a slow deep-thinking config as the live stop brake. Do not reuse the live generator’s config as the offline quality judge. Speed and judgment are separate product knobs.
 
 ## What is compared
 
