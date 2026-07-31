@@ -50,10 +50,16 @@ Do **not** start with adjectives (“empathetic,” “professional”). Start w
 
 A warm sentence that invents feelings from ASR garbage is a **fail**, not a style issue.
 
+## Probe-utterance quality (paired judge)
+
+When the question is not “which map edge?” but “is this spoken probe good enough?”, use a **comparative** contract: same candidate input, score path A and path B separately, then pick winner / tie—so an LLM judge does not drift strict/lenient across runs. Fatals first; then a small strategic / understanding / experience set. Humans typically only audit large disagreements and ultra-low scores.
+
+Shape: [followup-quality.md](./followup-quality.md). This does **not** replace route labels above.
+
 ## What this enables
 
-- Human review packs with shared vocabulary  
+- Shared vocabulary for route vs surface fails  
 - Spot-checks of model outputs against the same axes  
-- Training / preference data that is a **contract**, not essays  
+- Preference / release compares that are a **contract**, not essays  
 
 Spoken realizations and production prompts stay private.

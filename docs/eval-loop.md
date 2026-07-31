@@ -33,9 +33,12 @@ Prompt polish without contract change is optional. Wrong edges are not.
 | **Grounding rate** | Invented premises / false “you said”? | Hard fail |
 | **One-ask rate** | Single open question? | Product constraint |
 | **Re-anchor target** | Restate last ask vs wrong stem? | Known failure class |
-| **Human–model agreement** | Spot panel on score_dimensions | Release bar |
+| **Probe quality (paired)** | Path A vs B on same input; fatals first | Model swap / prompt update |
+| **Human spot-check** | Large disagreements + ultra-low scores | Calibrate the judge |
 
 Exact thresholds are product-specific. Publish the **shape**, not internal KPIs.
+
+For probe-utterance judgment (impact-first fatals, strategic / understanding / experience dimensions, paired compare so the LLM judge’s scale does not drift): [followup-quality.md](./followup-quality.md).
 
 ## Severity order
 
@@ -59,6 +62,8 @@ Numbers belong in private runbooks; the public point is **gate order**.
 
 - Failure notes already in `docs/failure-case-*.md` are inputs to step 5.  
 - Label fields: [label-schema.md](./label-schema.md)  
+- Probe quality compare: [followup-quality.md](./followup-quality.md)  
+- Stop layers (stop follow-ups vs force-close item): [stop-conditions.md](./stop-conditions.md)  
 - Principles for what “wrong” means: [principles.md](./principles.md)
 
 ## Out of scope here

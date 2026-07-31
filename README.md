@@ -36,6 +36,8 @@ This repo turns that contract into something you can:
 | [docs/label-schema.md](./docs/label-schema.md) | Conceptual label / “good vs bad turn” contract |
 | [docs/competency-to-scenario.md](./docs/competency-to-scenario.md) | Upstream sketch: competency → scenario intent → type key |
 | [docs/eval-loop.md](./docs/eval-loop.md) | Sample → judge route → cluster fails → patch map/labels |
+| [docs/followup-quality.md](./docs/followup-quality.md) | How to judge the probe itself (paired compare, fatals first) |
+| [docs/stop-conditions.md](./docs/stop-conditions.md) | Stop follow-ups vs force-close item; time, rounds, stop classifier |
 | [docs/failure-case-reanchor.md](./docs/failure-case-reanchor.md) | Field note: stem vs last-ask re-anchor |
 | [docs/failure-case-behavioral-evidence.md](./docs/failure-case-behavioral-evidence.md) | Field note: “I would” chat vs past-episode evidence |
 | [docs/failure-case-job-transition-boundary.md](./docs/failure-case-job-transition-boundary.md) | Field note: former-employer complaints vs safety boundary |
@@ -128,6 +130,8 @@ Full list: [docs/principles.md](./docs/principles.md).
 Routing alone is not enough for product work. This repo also sketches:
 
 - **[label-schema.md](./docs/label-schema.md)** — fields for state / action_class / quality flags; judge route before surface.  
+- **[followup-quality.md](./docs/followup-quality.md)** — paired LLM-judge comparison for probe wording (fatals → dimensions; humans spot-check extremes).  
+- **[stop-conditions.md](./docs/stop-conditions.md)** — when to stop follow-ups vs force-close the item (time / rounds / stop classifier).  
 - **[competency-to-scenario.md](./docs/competency-to-scenario.md)** — how competencies connect to typed follow-up packs.  
 - **[eval-loop.md](./docs/eval-loop.md)** — failure clusters feed map and label fixes, not only prompt polish.
 

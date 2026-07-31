@@ -28,3 +28,5 @@ Differences live in the **normal strategy pack** and optional **type-specific bo
 ## Sample type maps
 
 See [maps/README.md](../maps/README.md) for the full index.
+
+Illustrative **default / max follow-up round caps** by type: [stop-conditions.md](./stop-conditions.md).
