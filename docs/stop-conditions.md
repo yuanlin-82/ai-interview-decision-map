@@ -69,7 +69,7 @@ Products often configure both a **default** probe budget and a **maximum** (the 
 | `opening-intro` | 1 | 3 |
 | `fallback` | 1 | 3 |
 
-**Compliance / illegal custom stems** (clearly unlawful hiring questions under equal-opportunity rules—e.g. marital status, fertility plans, household registration, religion, party support, parents’ occupation as direct asks): **0 / 0** — do not probe. Grey-zone controversial items are **not** automatically this bucket; handle under product legal review, not by inventing a public type key.
+**Compliance / illegal custom stems** (clearly unlawful hiring questions under equal-opportunity rules—primary direct asks on banned topics): **0 / 0** — do not probe. Classification contract: [type-classification.md](./type-classification.md). Grey-zone items are **not** automatically this bucket; handle under product legal review, not by inventing a public type key.
 
 ## Stop classifier (model branch)
 

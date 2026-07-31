@@ -23,7 +23,8 @@ Differences live in the **normal strategy pack** and optional **type-specific bo
 
 - **Product / research:** compare types by *goal* and *probe family*, not by copy.  
 - **Implementation:** map each probe family to private templates.  
-- **Eval:** score whether the chosen family matched the contract, independent of fluency.
+- **Eval:** score whether the chosen family matched the contract, independent of fluency.  
+- **Stem typing:** compliance screen then one primary intent → [type-classification.md](./type-classification.md).
 
 ## Sample type maps
 

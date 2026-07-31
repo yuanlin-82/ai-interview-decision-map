@@ -123,6 +123,8 @@ Report **tie rate**, **win rate among non-ties**, and **fatal case list**—not 
 | Invented premise / severe misread | `fail_grounding` |
 | Boundary / hostile | `fail_safety` |
 | Wrong language, unusable TTS, process leak into speech | `fail_surface` |
+
+For process text in the speakable string, see [failure-case-process-leak.md](./failure-case-process-leak.md). For **English-track** off-locale token leaks (not generalized to other target languages), see [failure-case-language-locale-leak.md](./failure-case-language-locale-leak.md).
 | Pass gates; only minor flaws | `pass` |
 
 Route bugs still dominate: a beautiful probe on the wrong edge is a map failure first.

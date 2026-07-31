@@ -35,6 +35,7 @@ Exact stems stay private. Public artifact = **intent + type key + follow-up owne
 ## Link to this repo
 
 - Type intents: [question-types.md](./question-types.md)  
+- Stem → type at runtime (compliance then classify): [type-classification.md](./type-classification.md)  
 - Follow-up routing: [maps/](../maps/)  
 - What “good” means after the turn: [label-schema.md](./label-schema.md)
 

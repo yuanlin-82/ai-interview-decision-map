@@ -75,5 +75,6 @@ Stem injection remains valid context for *what the thread is about*; re-anchor c
 ## Related
 
 - Type matrix: [../docs/question-types.md](../docs/question-types.md)  
+- Abnormal recoveries (shared + type overrides): [../docs/abnormal-responses.md](../docs/abnormal-responses.md)  
 - Type maps: [behavioral](./behavioral.md), [situational](./situational.md), [career-choice](./career-choice.md), [job-transition](./job-transition.md), [opening-intro](./opening-intro.md), [fallback](./fallback.md)  
 - Principles: [../docs/principles.md](../docs/principles.md)

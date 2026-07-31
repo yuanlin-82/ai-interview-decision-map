@@ -4,7 +4,7 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 
 ## Routing
 
-1. **Split lanes early.** Classify the latest turn as flow/abnormal vs substantively normal before composing a probe.  
+1. **Split lanes early.** Classify the latest turn as flow/abnormal vs substantively normal before composing a probe. Shared recoveries and type overrides: [abnormal-responses.md](./abnormal-responses.md).  
 2. **Recover with action classes, not creativity.** Empty, unintelligible, quit/skip, challenge, and re-anchor cases use constrained recovery moves.  
 3. **One open question per turn.** Do not chain “and also…” probes.
 
@@ -17,6 +17,7 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 ## Grounding & safety
 
 7. **Never invent candidate premises** (“when you led the project…”) unless the candidate supplied them.  
+7a. **Prefer observables over mind-reading.** Abnormal recovery should key off what was said, missing, or clashing across turns—not a free inference of “what they really intended.” (Design preference for stable routing; not a claim about model internals.)  
 8. **Silent ASR repair** when intent is recoverable; do not quiz the candidate about recognition noise.  
 9. **Type-specific safety/boundary packs** override generic probing when triggered — shown as one overview node, detailed per type. Example: on `job-transition`, do not dig complaints about a former employer; redirect to fit / future seeking.
 

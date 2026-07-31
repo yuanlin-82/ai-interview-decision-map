@@ -35,6 +35,8 @@ This repo turns that contract into something you can:
 | [docs/methodology.md](./docs/methodology.md) | How the map was reverse-derived |
 | [docs/label-schema.md](./docs/label-schema.md) | Conceptual label / “good vs bad turn” contract |
 | [docs/competency-to-scenario.md](./docs/competency-to-scenario.md) | Upstream sketch: competency → scenario intent → type key |
+| [docs/type-classification.md](./docs/type-classification.md) | Stem → compliance screen → single type key |
+| [docs/abnormal-responses.md](./docs/abnormal-responses.md) | Shared abnormal recoveries + type-specific overrides |
 | [docs/eval-loop.md](./docs/eval-loop.md) | Sample → judge route → cluster fails → patch map/labels |
 | [docs/followup-quality.md](./docs/followup-quality.md) | How to judge the probe itself (paired compare, fatals first) |
 | [docs/stop-conditions.md](./docs/stop-conditions.md) | Stop follow-ups vs force-close item; time, rounds, stop classifier |
@@ -43,6 +45,8 @@ This repo turns that contract into something you can:
 | [docs/failure-case-job-transition-boundary.md](./docs/failure-case-job-transition-boundary.md) | Field note: former-employer complaints vs safety boundary |
 | [docs/failure-case-situational-overgeneralize.md](./docs/failure-case-situational-overgeneralize.md) | Field note: overgeneralizing one situational follow-up rule |
 | [docs/failure-case-workplace-resilience-frontline.md](./docs/failure-case-workplace-resilience-frontline.md) | Field note: blunt frontline answers misread as “no intent” |
+| [docs/failure-case-process-leak.md](./docs/failure-case-process-leak.md) | Field note: analysis / process text leaking into TTS |
+| [docs/failure-case-language-locale-leak.md](./docs/failure-case-language-locale-leak.md) | Field note: non-English tokens in English probes (English-track only) |
 | [examples/walkthroughs.md](./examples/walkthroughs.md) | Anonymized path walkthroughs |
 
 ## What you will not find
@@ -133,6 +137,8 @@ Routing alone is not enough for product work. This repo also sketches:
 - **[followup-quality.md](./docs/followup-quality.md)** — paired LLM-judge comparison for probe wording (fatals → dimensions; humans spot-check extremes).  
 - **[stop-conditions.md](./docs/stop-conditions.md)** — when to stop follow-ups vs force-close the item (time / rounds / stop classifier).  
 - **[competency-to-scenario.md](./docs/competency-to-scenario.md)** — how competencies connect to typed follow-up packs.  
+- **[type-classification.md](./docs/type-classification.md)** — compliance screen then one primary-intent type key per stem.  
+- **[abnormal-responses.md](./docs/abnormal-responses.md)** — shared recovery actions vs type boundary overrides.  
 - **[eval-loop.md](./docs/eval-loop.md)** — failure clusters feed map and label fixes, not only prompt polish.
 
 Still methodology-only: no production prompts or customer stems.
