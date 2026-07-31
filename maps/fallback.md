@@ -2,7 +2,7 @@
 
 Extends the [overview](./overview.md).
 
-**Role of this pack:** safe **continuation** of the interview when no specialized competency frame fits. Prioritize keeping the dialogue usable and neutral — not forcing a clever but wrong lens.
+**Role of this pack:** safe **continuation** when no specialized competency frame fits (`default` pack in some product matrices). Prioritize keeping the dialogue usable and neutral.
 
 ```mermaid
 flowchart TD
@@ -11,10 +11,12 @@ flowchart TD
   Ov -->|other abnormal| Ab[Other overview abnormal actions]
   Ov -->|normal| Pack{Strategy_Pack fallback}
 
-  Pack -->|Needs_clarity| H[Pick_one_clarifying_cell]
-  Pack -->|Needs_concrete_scene| E[Request_one_example]
+  Pack -->|Missing_what_or_how| H[Pick_one_5W1H_cell]
+  Pack -->|Missing_why_who_when| H2[Pick_one_5W1H_cell]
+  Pack -->|No_clear_5W1H_gap| E[Request_one_example]
 
   H --> One[Ask_Single_Open_Question]
+  H2 --> One
   E --> One
   R --> Await([Await_Next_Turn])
   Ab --> Await
@@ -23,6 +25,7 @@ flowchart TD
 
 ## Pack rules
 
-- Goal: **continue safely** — clarify or concretize without over-fitting a specialty model.  
+- Goal: **continue safely** — clarify or concretize without forcing a wrong specialty lens.  
+- Choose the **single** most missing 5W1H cell (what / how / why / who / when-where), or fall back to one example request.  
 - Neutral-curious; do not score aloud.  
-- Exactly one clarifying deepen **or** one example request — never both stacked.
+- Never stack multiple 5W1H asks in one turn.

@@ -87,6 +87,7 @@ Longer field notes (dialogue-design lens):
 - [failure-case-behavioral-evidence.md](./failure-case-behavioral-evidence.md) — “I would” chat vs past-episode grounding  
 - [failure-case-job-transition-boundary.md](./failure-case-job-transition-boundary.md) — former-employer complaints vs type safety boundary  
 - [failure-case-situational-overgeneralize.md](./failure-case-situational-overgeneralize.md) — overgeneralizing one situational rule (frame / gotcha probing)
+- [failure-case-workplace-resilience-frontline.md](./failure-case-workplace-resilience-frontline.md) — blunt frontline answers misread as “no intent” on resilience items
 
 ## What we deliberately do not publish
 

@@ -33,10 +33,14 @@ This repo turns that contract into something you can:
 | [docs/question-types.md](./docs/question-types.md) | Question-type matrix (intent only) |
 | [docs/principles.md](./docs/principles.md) | Short design principles |
 | [docs/methodology.md](./docs/methodology.md) | How the map was reverse-derived |
+| [docs/label-schema.md](./docs/label-schema.md) | Conceptual label / “good vs bad turn” contract |
+| [docs/competency-to-scenario.md](./docs/competency-to-scenario.md) | Upstream sketch: competency → scenario intent → type key |
+| [docs/eval-loop.md](./docs/eval-loop.md) | Sample → judge route → cluster fails → patch map/labels |
 | [docs/failure-case-reanchor.md](./docs/failure-case-reanchor.md) | Field note: stem vs last-ask re-anchor |
 | [docs/failure-case-behavioral-evidence.md](./docs/failure-case-behavioral-evidence.md) | Field note: “I would” chat vs past-episode evidence |
 | [docs/failure-case-job-transition-boundary.md](./docs/failure-case-job-transition-boundary.md) | Field note: former-employer complaints vs safety boundary |
 | [docs/failure-case-situational-overgeneralize.md](./docs/failure-case-situational-overgeneralize.md) | Field note: overgeneralizing one situational follow-up rule |
+| [docs/failure-case-workplace-resilience-frontline.md](./docs/failure-case-workplace-resilience-frontline.md) | Field note: blunt frontline answers misread as “no intent” |
 | [examples/walkthroughs.md](./examples/walkthroughs.md) | Anonymized path walkthroughs |
 
 ## What you will not find
@@ -66,18 +70,23 @@ Key global rule called out on the overview map:
 ## Question types at a glance
 
 Follow-up is not one skill. The contract is typed.  
-Below is an **illustrative subset** (not an exhaustive product catalog):
+Maps cover a fuller matrix (still methodology-only):
 
 | Type key | Assessment intent (short) |
 |----------|---------------------------|
 | `behavioral` | Past behavior as evidence of future performance |
 | `situational` | Capability under scenario tension |
-| `career-choice` | Decision process behind career direction |
-| `job-transition` | Drivers of job moves (non-judgmental) |
+| `issue-reasoning` | Open-topic critical thinking & argumentation |
+| `domain-knowledge` | Domain / professional knowledge (spoken technical-style) |
+| `career-choice` | Career planning maturity |
+| `information-gathering` | Collect & confirm information slots |
+| `workplace-resilience` | Work-framed stress handling (non-clinical) |
+| `job-transition` | Leave / job-change drivers |
+| `culture-fit` | Preference, trade-offs, contribution |
 | `opening-intro` | Opening narrative: claims, motivation, clarity |
 | `fallback` | Safe continuation when no specialized pack fits |
 
-Details: [docs/question-types.md](./docs/question-types.md).
+Index: [maps/README.md](./maps/README.md) · Matrix: [docs/question-types.md](./docs/question-types.md).
 
 ---
 
@@ -111,6 +120,18 @@ Longer note: [docs/methodology.md](./docs/methodology.md).
 - Same contract, replaceable surface forms (language / model).
 
 Full list: [docs/principles.md](./docs/principles.md).
+
+---
+
+## Labels & eval (preview)
+
+Routing alone is not enough for product work. This repo also sketches:
+
+- **[label-schema.md](./docs/label-schema.md)** — fields for state / action_class / quality flags; judge route before surface.  
+- **[competency-to-scenario.md](./docs/competency-to-scenario.md)** — how competencies connect to typed follow-up packs.  
+- **[eval-loop.md](./docs/eval-loop.md)** — failure clusters feed map and label fixes, not only prompt polish.
+
+Still methodology-only: no production prompts or customer stems.
 
 ---
 

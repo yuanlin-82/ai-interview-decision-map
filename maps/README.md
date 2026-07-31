@@ -1,15 +1,21 @@
 # Type maps index
 
-Illustrative subset only (not a full product catalog).
+Illustrative typed packs hanging off one shared [overview](./overview.md) router.  
+Methodology only — **no production prompts**.
 
-| Type | Map |
-|------|-----|
-| overview (shared router) | [overview.md](./overview.md) |
-| `behavioral` | [behavioral.md](./behavioral.md) |
-| `situational` | [situational.md](./situational.md) |
-| `career-choice` | [career-choice.md](./career-choice.md) |
-| `job-transition` | [job-transition.md](./job-transition.md) |
-| `opening-intro` | [opening-intro.md](./opening-intro.md) |
-| `fallback` | [fallback.md](./fallback.md) |
+| Type key | Map | Notes |
+|----------|-----|-------|
+| overview (shared router) | [overview.md](./overview.md) | Abnormal vs normal |
+| `behavioral` | [behavioral.md](./behavioral.md) | Past behavior as evidence |
+| `situational` | [situational.md](./situational.md) | |
+| `issue-reasoning` | [issue-reasoning.md](./issue-reasoning.md) | Open-topic critical thinking |
+| `domain-knowledge` | [domain-knowledge.md](./domain-knowledge.md) | Oral domain / professional knowledge |
+| `career-choice` | [career-choice.md](./career-choice.md) | Career planning maturity |
+| `information-gathering` | [information-gathering.md](./information-gathering.md) | Collect & confirm slots, then stop |
+| `workplace-resilience` | [workplace-resilience.md](./workplace-resilience.md) | Work-framed stress handling (non-clinical) |
+| `job-transition` | [job-transition.md](./job-transition.md) | Leave / job-change drivers |
+| `culture-fit` | [culture-fit.md](./culture-fit.md) | Preference & contribution |
+| `opening-intro` | [opening-intro.md](./opening-intro.md) | Self-intro strategies |
+| `fallback` | [fallback.md](./fallback.md) | Default / safe continuation |
 
-Prefer extending packs over pasting prompt text.
+Matrix: [docs/question-types.md](../docs/question-types.md).
