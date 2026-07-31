@@ -30,7 +30,7 @@ This repo turns that contract into something you can:
 |------|---------|
 | [maps/overview.md](./maps/overview.md) | Global decision map (action-level) |
 | [maps/](./maps/) | Illustrative type-level maps + index |
-| [docs/question-types.md](./docs/question-types.md) | Question-type matrix (intent only) |
+| [docs/question-types.md](./docs/question-types.md) | Normal probe packs by type (at-a-glance对照) |
 | [docs/principles.md](./docs/principles.md) | Short design principles |
 | [docs/methodology.md](./docs/methodology.md) | How the map was reverse-derived |
 | [docs/label-schema.md](./docs/label-schema.md) | Conceptual label / “good vs bad turn” contract |
@@ -57,6 +57,21 @@ This repo turns that contract into something you can:
 - Internal variable registries or deployment configs
 
 Production systems may implement the same contract with different wording. That implementation layer stays private.
+
+---
+
+## Suggested reading order
+
+1. **[principles.md](./docs/principles.md)** — constraints above wording (one ask, last-ask re-anchor, observables over mind-reading).  
+2. **[maps/overview.md](./maps/overview.md)** — shared abnormal vs normal router.  
+3. **[abnormal-responses.md](./docs/abnormal-responses.md)** — process / content / cross-turn contradiction + type overrides.  
+4. **[question-types.md](./docs/question-types.md)** — normal packs at a glance → open one [type map](./maps/) for depth.  
+5. **[type-classification.md](./docs/type-classification.md)** + **[stop-conditions.md](./docs/stop-conditions.md)** — how a stem gets a type; when probing ends.  
+6. **[followup-quality.md](./docs/followup-quality.md)** + **[eval-loop.md](./docs/eval-loop.md)** — how to judge probes and feed failures back.  
+7. **[examples/walkthroughs.md](./examples/walkthroughs.md)** + **`docs/failure-case-*.md`** — concrete paths and field notes.
+
+Upstream design sketch (competency → scenario → type): [competency-to-scenario.md](./docs/competency-to-scenario.md).  
+How the maps were reverse-derived: [methodology.md](./docs/methodology.md).
 
 ---
 
@@ -92,7 +107,7 @@ Maps cover a fuller matrix (still methodology-only):
 | `opening-intro` | Opening narrative: claims, motivation, clarity |
 | `fallback` | Safe continuation when no specialized pack fits |
 
-Index: [maps/README.md](./maps/README.md) · Matrix: [docs/question-types.md](./docs/question-types.md).
+Index: [maps/README.md](./maps/README.md) · At-a-glance packs: [docs/question-types.md](./docs/question-types.md).
 
 ---
 
@@ -100,7 +115,7 @@ Index: [maps/README.md](./maps/README.md) · Matrix: [docs/question-types.md](./
 
 Candidate answers a behavioral probe → interviewer deepens one STAR gap → candidate says they forgot the question → interviewer **restates the last follow-up** (not the original stem) → candidate answers → interviewing continues.
 
-Full narrative: [examples/walkthroughs.md](./examples/walkthroughs.md).
+Full narratives: [examples/walkthroughs.md](./examples/walkthroughs.md) (re-anchor, type boundary, fallback, empty recovery, stop-brake miss).
 
 ---
 
@@ -142,6 +157,14 @@ Routing alone is not enough for product work. This repo also sketches:
 - **[eval-loop.md](./docs/eval-loop.md)** — failure clusters feed map and label fixes, not only prompt polish.
 
 Still methodology-only: no production prompts or customer stems.
+
+---
+
+## Honest scope gap: session-level flow
+
+This repo is strong on **within-item** follow-up: type the stem, recover abnormalities, probe once per turn, stop the item.
+
+**Whole-interview orchestration** (how items should sequence, how evidence should accumulate across stems, how opening/closing should frame the session) is **not** designed here in depth. Live products often run **item → item** with transition copy between them. That is a real product gap—not a hidden chapter of this map. Treat inter-item transitions as UX glue unless you separately design session policy.
 
 ---
 

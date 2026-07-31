@@ -62,3 +62,37 @@ Overview choice **B**: specialty boundaries are a first-class dashed node, not a
 ### Why this walkthrough exists
 
 `fallback` is about **safe continuation**: keep dialogue usable and neutral when no specialized lens should be applied.
+
+---
+
+## Walkthrough 4 — Content-related empty → soft reinvite (not a deepen)
+
+**Type:** `behavioral` (shared content family; any typed item similar)
+
+| Turn | Candidate (paraphrase) | Judgment | Action class |
+|------|------------------------|----------|--------------|
+| 0 | *(stem already asked)* | — | — |
+| 1 | Only fillers / “I don’t know” with no elaboration | Content-related: `Empty_Or_Fillers` | `Soft_Reinvite` (or soft re-ask with **last ask**)—**no** “when you mentioned…” |
+| 2 | Offers a thin but real episode word | Thin-but-substantive (edge of normal) | One **anchored** open question—not bare “say more” |
+| 3 | Adds usable detail | Normal | `Strategy_Pack(behavioral)` → one family only |
+
+### Why this walkthrough exists
+
+Empty and “forgot the question” are different content recoveries. Empty must not invent premises; very short-with-anchor is not the same as empty. Families: [abnormal-responses.md](../docs/abnormal-responses.md).
+
+---
+
+## Walkthrough 5 — Stop brake misses; one extra probe, then advance
+
+**Type:** any; illustrates [stop-conditions.md](../docs/stop-conditions.md)
+
+| Beat | What happens | Contract read |
+|------|----------------|---------------|
+| 1 | Candidate finishes a substantive answer after at least one prior follow-up | Stop classifier and follow-up **generator** start **in parallel** |
+| 2 | Generator finishes first; probe is committed to TTS | Stop returns `stop` **too late** → **intercept fails** |
+| 3 | Candidate hears **one** extra follow-up | Often acceptable; avoid stacking awkward probes |
+| 4 | Item advances (next stem), often after transition copy | Time / max **follow-up rounds** (stem turn not counted) remain hard backstops |
+
+### Why this walkthrough exists
+
+Stop is a **fast parallel brake**, not a deep offline judge. Missed intercept ≠ total failure; continuous awkward chat is the failure mode to watch.

@@ -18,4 +18,5 @@ Methodology only — **no production prompts**.
 | `opening-intro` | [opening-intro.md](./opening-intro.md) | Self-intro strategies |
 | `fallback` | [fallback.md](./fallback.md) | Default / safe continuation |
 
-Matrix: [docs/question-types.md](../docs/question-types.md).
+Matrix / at-a-glance对照: [docs/question-types.md](../docs/question-types.md).
+Abnormal recoveries: [docs/abnormal-responses.md](../docs/abnormal-responses.md).
