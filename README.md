@@ -160,6 +160,16 @@ Still methodology-only: no production prompts or customer stems.
 
 ---
 
+## Related: oral ability scores (not this map)
+
+Multi-turn **English** on this map still targets **competency / job evidence**. That is easy to confuse with **interaction-based oral proficiency** testing (examiner probes aimed at language performance—not the same construct).
+
+For task-based vs interaction-based speaking measurement—and the competency-in-English caveat—see:
+
+- [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment) → [`task-vs-interaction.md`](https://github.com/yuanlin-82/english-speaking-assessment/blob/main/docs/task-vs-interaction.md)
+
+---
+
 ## Honest scope gap: session-level flow
 
 This repo is strong on **within-item** follow-up: type the stem, recover abnormalities, probe once per turn, stop the item.
