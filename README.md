@@ -47,6 +47,7 @@ This repo turns that contract into something you can:
 | [docs/failure-case-workplace-resilience-frontline.md](./docs/failure-case-workplace-resilience-frontline.md) | Field note: blunt frontline answers misread as “no intent” |
 | [docs/failure-case-process-leak.md](./docs/failure-case-process-leak.md) | Field note: analysis / process text leaking into TTS |
 | [docs/failure-case-language-locale-leak.md](./docs/failure-case-language-locale-leak.md) | Field note: non-English tokens in English probes (English-track only) |
+| [docs/failure-case-message-assembly-empty-turn.md](./docs/failure-case-message-assembly-empty-turn.md) | Field note: generate vs stop assembly; silent turns must still occupy a slot |
 | [examples/walkthroughs.md](./examples/walkthroughs.md) | Anonymized path walkthroughs |
 
 ## What you will not find

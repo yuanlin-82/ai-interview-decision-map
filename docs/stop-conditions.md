@@ -140,6 +140,10 @@ ASR caveat (contract-level): unclear speech that could be recognition error shou
 - Production stop-prompt text or vendor model IDs.  
 - Oral proficiency scoring.
 
+## Related field note
+
+How history is **assembled** for generate vs stop (and why silent candidate turns must still occupy a slot): [failure-case-message-assembly-empty-turn.md](./failure-case-message-assembly-empty-turn.md).
+
 ## One-line summary
 
 > **Time** is the hardest stop; **follow-up rounds** exclude the stem turn; the **stop classifier** runs as a **fast parallel brake** beside generation (missed intercept ≈ one extra probe)—then the item advances, often via transition copy, while maps still own *what* to ask while probing is allowed.
