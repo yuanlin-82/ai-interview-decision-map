@@ -25,7 +25,7 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 
 10. **Probe from an anchor** in the candidate’s meaning; if there is no anchor, you are still on the abnormal lane.  
 11. **Strategy packs are typed.** `behavioral` ≠ `job-transition` ≠ `fallback`; only the overview router is universal.  
-12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell.  
+12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell. Prefer the **high-gain aspect** (empty job-evidence cells), not more asks of the same cell.  
 13. **For `behavioral`, enforce evidence type.** Ideal / hypothetical “I would…” is not a past episode — ground first; do not accompany the fiction. Digging has a ceiling (termination is a separate product policy).  
 14. **For `situational`, do not overgeneralize one probe rule.** Past-tense digs, boundary/risk probes, and “prefer real behavior” each need branch gates; legal answer shapes are wide (plan / past / stance / mix).
 

@@ -84,7 +84,7 @@ Exact rates and tag taxonomies stay in private runbooks.
 
 When no fatal applies, score a small fixed set (illustrative 0–100 each):
 
-1. **Strategic efficacy** — Does the probe pull the next useful layer of evidence for the competency / type?
+1. **Strategic efficacy** — Does the probe pull the next useful layer of evidence for the competency / type? Prefer the dig **angle** that closes the most empty job-evidence cells, not merely another question.
 2. **Understanding** — Does it respect what the candidate meant? Anchors, no false “you said.”
 3. **Candidate experience** — Clear, professional, speakable; **prefer one open question per turn.**
 

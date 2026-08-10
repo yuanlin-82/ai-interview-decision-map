@@ -201,9 +201,12 @@ Still methodology-only: no production prompts or customer stems.
 
 Multi-turn **English** on this map still targets **competency / job evidence**. That is easy to confuse with **interaction-based oral proficiency** testing (examiner probes aimed at language performance—not the same construct).
 
+**Probe geometry (operational):** this map chooses a **high-gain dig angle** over job-evidence cells (multi-angle sampling). Interactive oral assessment, when sold as ability measurement, instead **calibrates elicitation demand** along an ability band—see the oral repo. Same LLM family, different contracts.
+
 For task-based vs interaction-based speaking measurement—and the competency-in-English caveat—see:
 
 - [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment) → [`task-vs-interaction.md`](https://github.com/yuanlin-82/english-speaking-assessment/blob/main/docs/task-vs-interaction.md)
+- Optional intuition-only note: [`notes-working-metaphor.md`](https://github.com/yuanlin-82/english-speaking-assessment/blob/main/docs/notes-working-metaphor.md) (not a claim of this map)
 
 ---
 
