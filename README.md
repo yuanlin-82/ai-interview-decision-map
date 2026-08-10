@@ -14,6 +14,8 @@ A decision map for AI interview follow-up turns, reverse-derived from real multi
 
 Companion (task-based **oral scores**, not routing): [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment).
 
+Whole-session product context (组卷 → 问答/选择 → 报告): [system map on profile](https://github.com/yuanlin-82/yuanlin-82/blob/main/docs/system-map.md).
+
 ---
 
 ## 5-minute visitor guide
