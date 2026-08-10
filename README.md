@@ -8,6 +8,37 @@ A decision map for AI interview follow-up turns, reverse-derived from real multi
 > **Out of scope:** production prompts, spoken copy decks, raw transcripts  
 > See [NOTICE.md](./NOTICE.md).
 
+**Author role:** content / assessment design—routing contracts, failure taxonomies, probe-quality gates. Not a claim to own the full Agent platform, model serving, or wire assembly.
+
+**Public vs private:** this repo is the durable **decision contract**. Production prompt bodies, spoken copy, and deployment configs stay private; they implement the same routes under different wording.
+
+Companion (task-based **oral scores**, not routing): [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment).
+
+---
+
+## 5-minute visitor guide
+
+| Read first | Product problem it answers |
+| --- | --- |
+| [maps/overview.md](./maps/overview.md) | Shared abnormal vs normal router (what fires next) |
+| [docs/stop-conditions.md](./docs/stop-conditions.md) | Parallel brake: time / rounds / stop classifier ≠ generator |
+| [docs/from-failure-to-contract.md](./docs/from-failure-to-contract.md) | One end-to-end path: bad re-anchor → contract → eval |
+
+Then skim [principles.md](./docs/principles.md) and one [failure-case-*.md](./docs/) field note.
+
+```mermaid
+flowchart LR
+  Stem[Stem] --> Type[Type key]
+  Type --> Gen[Generate probe]
+  Type --> Stop[Stop brake]
+  Gen --> TTS[TTS turn]
+  Stop -->|stop| End[End item]
+  Stop -->|continue| Gen
+  Oral[Oral scores] -.->|separate product line| Report[Ability report]
+```
+
+Routing (this repo) and oral ability scores (companion repo) answer different questions—do not merge them with English-medium competency interviews.
+
 ---
 
 ## Why this exists
@@ -40,6 +71,7 @@ This repo turns that contract into something you can:
 | [docs/eval-loop.md](./docs/eval-loop.md) | Sample → judge route → cluster fails → patch map/labels |
 | [docs/followup-quality.md](./docs/followup-quality.md) | How to judge the probe itself (paired compare, fatals first) |
 | [docs/stop-conditions.md](./docs/stop-conditions.md) | Stop follow-ups vs force-close item; time, rounds, stop classifier |
+| [docs/from-failure-to-contract.md](./docs/from-failure-to-contract.md) | Walkthrough: one failure → contract change → eval |
 | [docs/failure-case-reanchor.md](./docs/failure-case-reanchor.md) | Field note: stem vs last-ask re-anchor |
 | [docs/failure-case-behavioral-evidence.md](./docs/failure-case-behavioral-evidence.md) | Field note: “I would” chat vs past-episode evidence |
 | [docs/failure-case-job-transition-boundary.md](./docs/failure-case-job-transition-boundary.md) | Field note: former-employer complaints vs safety boundary |
@@ -70,7 +102,8 @@ Production systems may implement the same contract with different wording. That 
 4. **[question-types.md](./docs/question-types.md)** — normal packs at a glance → open one [type map](./maps/) for depth.  
 5. **[type-classification.md](./docs/type-classification.md)** + **[stop-conditions.md](./docs/stop-conditions.md)** — how a stem gets a type; when probing ends.  
 6. **[followup-quality.md](./docs/followup-quality.md)** + **[eval-loop.md](./docs/eval-loop.md)** — how to judge probes and feed failures back.  
-7. **[examples/walkthroughs.md](./examples/walkthroughs.md)** + **`docs/failure-case-*.md`** — concrete paths and field notes.
+7. **[from-failure-to-contract.md](./docs/from-failure-to-contract.md)** — one failure → which layer → contract change → re-check.  
+8. **[examples/walkthroughs.md](./examples/walkthroughs.md)** + **`docs/failure-case-*.md`** — concrete paths and field notes.
 
 Upstream design sketch (competency → scenario → type): [competency-to-scenario.md](./docs/competency-to-scenario.md).  
 How the maps were reverse-derived: [methodology.md](./docs/methodology.md).
