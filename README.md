@@ -1,10 +1,10 @@
 # AI Interview Follow-up Decision Map
 
-## 中文导读（约1分钟）
+## 中文导读
 
 给做 **多轮 / 语音面试追问** 的人：候选人说完下一句该走哪条路（异常恢复 vs 分题型深挖）——不是生产提示词合集。
 
-- **五分钟入口**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md)  
+- **建议先读**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md)  
 - **本仓**：追问 **路由合同**（问什么、何时停）。  
 - **不是本仓**：口语能力定级（见 [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment)）。用英语做胜任力面试 ≠ 在测口语水平。
 
@@ -30,7 +30,7 @@ Whole-session product context (组卷 → 问答/选择 → 报告): [system map
 
 ---
 
-## 5-minute visitor guide
+## Visitor guide
 
 | Read first | Product problem it answers |
 | --- | --- |
