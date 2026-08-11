@@ -219,6 +219,7 @@ For task-based vs interaction-based speaking measurement—and the competency-in
 
 - [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment) → [`task-vs-interaction.md`](https://github.com/yuanlin-82/english-speaking-assessment/blob/main/docs/task-vs-interaction.md)
 - Optional intuition-only note: [`notes-working-metaphor.md`](https://github.com/yuanlin-82/english-speaking-assessment/blob/main/docs/notes-working-metaphor.md) (not a claim of this map)
+- Competency **item → dimension** score shape (evidence cells → report; not this map’s probe judge): [`item-to-dimension-score.md`](https://github.com/yuanlin-82/yuanlin-82/blob/main/docs/item-to-dimension-score.md)
 
 ---
 
