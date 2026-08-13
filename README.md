@@ -10,6 +10,8 @@
 
 公开的是可审计的决策结构；生产话术与部署配置不公开。
 
+**可迁移（非本仓主线）：** 同一套「失败类型 → 路由/边界合同 → 质检」也适用于情感陪伴等对话——例如假共情、越界探查、一次多问、不该说出口的内容。本仓案例仍以面试追问为主；情感向细节见求职说明，不在此堆无项目文档。
+
 ---
 
 **For builders of multi-turn / voice interview agents** who need auditable turn routing (exception lanes vs typed probes)—not another prompt dump.
@@ -21,6 +23,8 @@ A decision map for AI interview follow-up turns, reverse-derived from real multi
 > See [NOTICE.md](./NOTICE.md).
 
 **Author role:** content / assessment design—routing contracts, failure taxonomies, probe-quality gates. Not a claim to own the full Agent platform, model serving, or wire assembly.
+
+**Transferable pattern (not this repo’s primary corpus):** the same failure → contract → eval loop applies to other dialogue products (e.g. emotional companion / soft-skill talk): fake empathy, boundary probes, multi-ask turns, “must not say.” Worked examples here stay interview-follow-up; emotion-domain case detail lives in applications, not as fabricated companion docs in-repo.
 
 **Public vs private:** this repo is the durable **decision contract**. Production prompt bodies, spoken copy, and deployment configs stay private; they implement the same routes under different wording.
 
