@@ -4,7 +4,7 @@
 
 给做 **多轮 / 语音面试追问** 的人：候选人说完下一句该走哪条路（异常恢复 vs 分题型深挖）——不是生产提示词合集。
 
-- **建议先读**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md)  
+- **建议先读**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md) · [换路径时的表面习惯](./docs/field-note-model-path-habits.md)（特点观察，非排名）  
 - **本仓**：追问 **路由合同**（问什么、何时停）。  
 - **不是本仓**：口语能力定级（见 [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment)）。用英语做胜任力面试 ≠ 在测口语水平。
 
@@ -96,6 +96,7 @@ This repo turns that contract into something you can:
 | [docs/failure-case-situational-overgeneralize.md](./docs/failure-case-situational-overgeneralize.md) | Field note: overgeneralizing one situational follow-up rule |
 | [docs/failure-case-workplace-resilience-frontline.md](./docs/failure-case-workplace-resilience-frontline.md) | Field note: blunt frontline answers misread as “no intent” |
 | [docs/failure-case-process-leak.md](./docs/failure-case-process-leak.md) | Field note: analysis / process text leaking into TTS |
+| [docs/field-note-model-path-habits.md](./docs/field-note-model-path-habits.md) | Field note: surface habits when model×pack path changes (characteristics, not rankings) |
 | [docs/failure-case-language-locale-leak.md](./docs/failure-case-language-locale-leak.md) | Field note: non-English tokens in English probes (English-track only) |
 | [docs/failure-case-message-assembly-empty-turn.md](./docs/failure-case-message-assembly-empty-turn.md) | Field note: generate vs stop assembly; silent turns must still occupy a slot |
 | [docs/failure-case-cross-item-resume-repeat.md](./docs/failure-case-cross-item-resume-repeat.md) | Field note: same resume episode re-probed across items; needs session memory |

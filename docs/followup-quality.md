@@ -49,7 +49,8 @@ Typical unit (illustrative product practice):
 - **Unit of comparison:** a deployable **path** — model config × prompt package — not “raw model IQ.”
 - **Same method for prompt iteration:** hold the model fixed; generate with **old vs new** prompt; compare the two probes on identical `(stem, answer, type)` inputs.
 
-Languages / vendors may differ; the **gate shape** should not.
+Languages / vendors may differ; the **gate shape** should not.  
+For objective **habit families** when the path changes (not rankings): [field-note-model-path-habits.md](./field-note-model-path-habits.md).
 
 ## Impact first: fatal vs minor flaw
 
