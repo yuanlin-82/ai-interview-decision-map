@@ -6,7 +6,7 @@
 
 - **建议先读**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md) · [换路径时的表面习惯](./docs/field-note-model-path-habits.md)（特点观察，非排名）  
 - **本仓**：追问 **路由合同**（问什么、何时停）。  
-- **不是本仓**：口语能力定级（见 [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment)）。用英语做胜任力面试 ≠ 在测口语水平。
+- **不是本仓**：口语能力定级（见 [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment)）；会话级整场探索（见 [full-session-interview](https://github.com/yuanlin-82/full-session-interview)）。用英语做胜任力面试 ≠ 在测口语水平。
 
 公开的是可审计的决策结构；生产话术与部署配置不公开。
 
@@ -31,6 +31,8 @@ A decision map for AI interview follow-up turns, reverse-derived from real multi
 Companion (task-based **oral scores**, not routing): [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment).
 
 Whole-session product context (组卷 → 问答/选择 → 报告): [system map on profile](https://github.com/yuanlin-82/yuanlin-82/blob/main/docs/system-map.md).
+
+Exploratory **session-level** pipeline (HR needs interview → confirm gates → full dialogue; includes simulation prompts): [full-session-interview](https://github.com/yuanlin-82/full-session-interview).
 
 ---
 
