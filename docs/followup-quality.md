@@ -87,11 +87,13 @@ When no fatal applies, score a small fixed set (illustrative 0–100 each):
 
 1. **Strategic efficacy** — Does the probe pull the next useful layer of evidence for the competency / type? Prefer the dig **angle** that closes the most empty job-evidence cells, not merely another question.
 2. **Understanding** — Does it respect what the candidate meant? Anchors, no false “you said.”
-3. **Candidate experience** — Clear, professional, speakable; **prefer one open question per turn.**
+3. **Candidate experience** — Clear, professional, speakable; **prefer one open question per turn**; **probe difficulty matches answer depth** (no unnecessary abstraction uplift / synonym re-ask).
 
 Diagnose **candidate state** first (e.g. normal / hypothetical-evasive / misaligned / incomplete / empty), then apply type-aware strategic preferences (behavioral deepen STAR gaps; situational deepen judgment under the scenario; do not treat minor flaws as losses).
 
-Private products may keep detailed state→strategy tables; public contract only needs: **state before strategy, strategy before style.**
+On the **Normal** lane, also check **answer-depth band** before rewarding a typed deepen: short-low and long-low answers should get scaffold / pin-episode asks, not criteria stacks. Difficulty above what the candidate has already made clear is a **Clear flaw** on experience (and often understanding)—even when the dig angle is “strategically” attractive. See [overview](../maps/overview.md) and [failure-case-difficulty-mismatch.md](./failure-case-difficulty-mismatch.md).
+
+Private products may keep detailed state→strategy tables; public contract only needs: **state before strategy, strategy before style** — and **depth band before typed deepen**.
 
 ### Style metrics (do not decide winners)
 

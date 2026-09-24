@@ -2,9 +2,9 @@
 
 ## 中文导读
 
-给做 **多轮 / 语音面试追问** 的人：候选人说完下一句该走哪条路（异常恢复 vs 分题型深挖）——不是生产提示词合集。
+给做 **多轮 / 语音面试追问** 的人：候选人说完下一句该走哪条路（异常恢复 vs **作答层次/难度分流** vs 分题型深挖）——不是生产提示词合集。
 
-- **建议先读**：[overview 路由](./maps/overview.md) · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md) · [换路径时的表面习惯](./docs/field-note-model-path-habits.md)（特点观察，非排名）  
+- **建议先读**：[overview 路由](./maps/overview.md)（含作答层次/难度分流） · [停止闸门](./docs/stop-conditions.md) · [失败→合同一例](./docs/from-failure-to-contract.md) · [难度错配 field note](./docs/failure-case-difficulty-mismatch.md)  
 - **本仓**：追问 **路由合同**（问什么、何时停）。  
 - **不是本仓**：口语能力定级（见 [english-speaking-assessment](https://github.com/yuanlin-82/english-speaking-assessment)）；会话级整场探索（见 [full-session-interview](https://github.com/yuanlin-82/full-session-interview)）。用英语做胜任力面试 ≠ 在测口语水平。
 
@@ -40,9 +40,10 @@ Exploratory **session-level** pipeline (HR needs interview → confirm gates →
 
 | Read first | Product problem it answers |
 | --- | --- |
-| [maps/overview.md](./maps/overview.md) | Shared abnormal vs normal router (what fires next) |
+| [maps/overview.md](./maps/overview.md) | Shared abnormal vs normal router; **answer-depth band** before typed deepen |
 | [docs/stop-conditions.md](./docs/stop-conditions.md) | Parallel brake: time / rounds / stop classifier ≠ generator |
 | [docs/from-failure-to-contract.md](./docs/from-failure-to-contract.md) | One end-to-end path: bad re-anchor → contract → eval |
+| [docs/failure-case-difficulty-mismatch.md](./docs/failure-case-difficulty-mismatch.md) | Field note: Normal-lane deepen without matching answer depth |
 
 Then skim [principles.md](./docs/principles.md) and one [failure-case-*.md](./docs/) field note.
 
@@ -79,7 +80,7 @@ This repo turns that contract into something you can:
 
 | Path | Content |
 |------|---------|
-| [maps/overview.md](./maps/overview.md) | Global decision map (action-level) |
+| [maps/overview.md](./maps/overview.md) | Global decision map (action-level; includes answer-depth band) |
 | [maps/](./maps/) | Illustrative type-level maps + index |
 | [docs/question-types.md](./docs/question-types.md) | Normal probe packs by type (at-a-glance对照) |
 | [docs/principles.md](./docs/principles.md) | Short design principles |
@@ -99,6 +100,7 @@ This repo turns that contract into something you can:
 | [docs/failure-case-workplace-resilience-frontline.md](./docs/failure-case-workplace-resilience-frontline.md) | Field note: blunt frontline answers misread as “no intent” |
 | [docs/failure-case-process-leak.md](./docs/failure-case-process-leak.md) | Field note: analysis / process text leaking into TTS |
 | [docs/field-note-model-path-habits.md](./docs/field-note-model-path-habits.md) | Field note: surface habits when model×pack path changes (characteristics, not rankings) |
+| [docs/failure-case-difficulty-mismatch.md](./docs/failure-case-difficulty-mismatch.md) | Field note: Normal deepen without answer-depth match |
 | [docs/failure-case-language-locale-leak.md](./docs/failure-case-language-locale-leak.md) | Field note: non-English tokens in English probes (English-track only) |
 | [docs/failure-case-message-assembly-empty-turn.md](./docs/failure-case-message-assembly-empty-turn.md) | Field note: generate vs stop assembly; silent turns must still occupy a slot |
 | [docs/failure-case-cross-item-resume-repeat.md](./docs/failure-case-cross-item-resume-repeat.md) | Field note: same resume episode re-probed across items; needs session memory |
@@ -117,14 +119,14 @@ Production systems may implement the same contract with different wording. That 
 
 ## Suggested reading order
 
-1. **[principles.md](./docs/principles.md)** — constraints above wording (one ask, last-ask re-anchor, observables over mind-reading).  
-2. **[maps/overview.md](./maps/overview.md)** — shared abnormal vs normal router.  
+1. **[principles.md](./docs/principles.md)** — constraints above wording (one ask, answer-depth match, last-ask re-anchor, observables over mind-reading).  
+2. **[maps/overview.md](./maps/overview.md)** — shared abnormal vs normal router; Normal → answer-depth band → scaffold / pin / typed pack.  
 3. **[abnormal-responses.md](./docs/abnormal-responses.md)** — process / content / cross-turn contradiction + type overrides.  
 4. **[question-types.md](./docs/question-types.md)** — normal packs at a glance → open one [type map](./maps/) for depth.  
 5. **[type-classification.md](./docs/type-classification.md)** + **[stop-conditions.md](./docs/stop-conditions.md)** — how a stem gets a type; when probing ends.  
 6. **[followup-quality.md](./docs/followup-quality.md)** + **[eval-loop.md](./docs/eval-loop.md)** — how to judge probes and feed failures back.  
 7. **[from-failure-to-contract.md](./docs/from-failure-to-contract.md)** — one failure → which layer → contract change → re-check.  
-8. **[examples/walkthroughs.md](./examples/walkthroughs.md)** + **`docs/failure-case-*.md`** — concrete paths and field notes.
+8. **[examples/walkthroughs.md](./examples/walkthroughs.md)** + **`docs/failure-case-*.md`** — concrete paths and field notes (incl. [difficulty-mismatch](./docs/failure-case-difficulty-mismatch.md)).
 
 Upstream design sketch (competency → scenario → type): [competency-to-scenario.md](./docs/competency-to-scenario.md).  
 How the maps were reverse-derived: [methodology.md](./docs/methodology.md).
@@ -136,11 +138,14 @@ How the maps were reverse-derived: [methodology.md](./docs/methodology.md).
 1. **Diamonds** = judgments on the candidate’s latest turn (and light dialogue context).  
 2. **Rounded boxes** = action classes (what the interviewer should *do*), not scripts.  
 3. **Solid arrows** = primary routing.  
-4. Hard constraint on the normal path: **one probe per turn**.
+4. Hard constraint on the normal path: **one probe per turn**.  
+5. After Normal classification: **band answer depth before typed deepen** (scaffold / pin episode / strategy pack).
 
-Key global rule called out on the overview map:
+Key global rules called out on the overview map:
 
 > When re-anchoring to “the question”, restate the **last question the interviewer asked in this dialogue** — not necessarily the original stem item — unless that stem *was* the last ask.
+
+> Probe difficulty should not outrun what the candidate has already made clear; thin or long-empty answers stay on Normal but take scaffold / pin actions, not typed criteria stacks.
 
 ---
 

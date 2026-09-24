@@ -65,6 +65,7 @@ About **what they produced for the current ask** (single-turn observable).
 | Incomplete / interrupted mid-sentence | Invite continuation (safe fragment only) | Jump to deep typed dig |
 | Unintelligible after silent ASR repair | `Ask_Repeat_Utterance` | Treat as forgot-the-**exam**-question unless they also forgot |
 | Very short but has a concrete word | One **anchored** open question (light normal)—not bare “say more” | Fabricate an episode |
+| Short / long **low-information** but not empty | Stay on **Normal**; band depth → scaffold or pin-episode ([overview](../maps/overview.md)) | Dump into hard-abnormal tone, or jump to typed criteria deepen |
 
 **Re-anchor referent:** last interviewer ask in this dialogue. Field note: [failure-case-reanchor.md](./failure-case-reanchor.md).  
 Silent ASR repair when intent is recoverable → stay out of this table ([principles](./principles.md)).

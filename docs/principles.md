@@ -23,9 +23,11 @@ Short constraints that sit *above* wording. Implementations may differ; violatin
 
 ## Normal probing
 
-10. **Probe from an anchor** in the candidate’s meaning; if there is no anchor, you are still on the abnormal lane.  
+10. **Probe from an anchor** in the candidate’s meaning; if there is no usable content for any normal ask, you are still on the abnormal lane.  
+10a. **Match probe difficulty to answer depth (Normal lane).** After the turn is classified normal, band it as short-low-info / long-low-info / fact-anchor before typed deepen. Short-low → supportive scaffold; long-low → pin one concrete episode; only fact-anchor → `Strategy_Pack(type)`. This is **not** hard-abnormal recovery. See [overview](../maps/overview.md).  
+10b. **Do not synonym-reask a point already answered.** If the same information goal is still unmet (off-topic / avoidance), you may return to it with a clearer, easier ask—not the same abstract wording.  
 11. **Strategy packs are typed.** `behavioral` ≠ `job-transition` ≠ `fallback`; only the overview router is universal.  
-12. **Prefer depth over completeness.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell. Prefer the **high-gain aspect** (empty job-evidence cells), not more asks of the same cell.  
+12. **Prefer depth over completeness — with a ceiling.** After one deep follow-up on a detail, shift aspect rather than drilling the same cell. Prefer the **high-gain aspect** (empty job-evidence cells), not more asks of the same cell. **Depth must not outrun** what the candidate has already made clear; do not default to “one more abstract layer.”  
 13. **For `behavioral`, enforce evidence type.** Ideal / hypothetical “I would…” is not a past episode — ground first; do not accompany the fiction. Digging has a ceiling (termination is a separate product policy).  
 14. **For `situational`, do not overgeneralize one probe rule.** Past-tense digs, boundary/risk probes, and “prefer real behavior” each need branch gates; legal answer shapes are wide (plan / past / stance / mix).
 
